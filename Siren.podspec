@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   # Version
-  s.version       = "5.7.1"
+  s.version       = "5.7.2"
   s.swift_version = "5.3"
 
   # Meta
@@ -15,8 +15,9 @@ Pod::Spec.new do |s|
 
   # Compatibility & Sources
   s.platform     = :ios, "11.0"
-  s.source       = { :git => "https://github.com/ArtSabintsev/Siren.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/abikoka/Siren.git", :tag => s.version.to_s }
   s.source_files = 'Sources/**/*.swift'
   s.resources    = 'Sources/Siren.bundle'
   s.requires_arc = true
+  s.resource_bundles = {'MMDrawerController' => ['MMDrawerController/PrivacyInfo.xcprivacy']}
 end
