@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/**/*.swift'
   s.resources    = 'Sources/Siren.bundle'
   s.requires_arc = true
-  s.resource_bundles = {'MMDrawerController' => ['MMDrawerController/PrivacyInfo.xcprivacy']}
+  s.resource_bundles = {'Siren' => ['Sources/PrivacyInfo.xcprivacy']}
 end
