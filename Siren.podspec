@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/**/*.swift'
   s.resources    = 'Sources/Siren.bundle'
   s.requires_arc = true
-  s.resource_bundles = {'Siren' => ['Sources/PrivacyInfo.xcprivacy']}
+  s.resources = ['Sources/PrivacyInfo.xcprivacy']
 end
