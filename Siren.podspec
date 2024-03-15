@@ -17,7 +17,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "11.0"
   s.source       = { :git => "https://github.com/abikoka/Siren.git", :tag => s.version.to_s }
   s.source_files = 'Sources/**/*.swift'
-  s.resources    = 'Sources/Siren.bundle'
+  s.resources    = ['Sources/Siren.bundle', 'Sources/PrivacyInfo.xcprivacy']
   s.requires_arc = true
-  s.resources = ['Sources/PrivacyInfo.xcprivacy']
 end
